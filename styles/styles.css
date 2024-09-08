@@ -44,11 +44,24 @@ header {
 }
 
 .item {
+  overflow: hidden;
+  display: inline-block;
   max-inline-size: 20rem;
   color: var(--secondary-color);
 }
 .item img {
+  display: block;
   max-inline-size: 20rem;
+}
+
+.over {
+  background: rgba(0, 0, 0, 0.6);
+  transform: translateY(150%);
+  transition: transform 0.15s ease-in-out;
+}
+
+.item:hover .over {
+  transform: translateY(0);
 }
 
 .rating {
